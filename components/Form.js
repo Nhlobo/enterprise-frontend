@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { submitLead } from '../lib/api';
 
 export default function Form({ title = 'Get in Touch', onSuccess }) {
@@ -108,7 +109,7 @@ export default function Form({ title = 'Get in Touch', onSuccess }) {
         />
         <label htmlFor="consent" className="text-sm text-gray-600">
           I consent to Mapengo Innovation processing my personal information in accordance with the{' '}
-          <a href="/privacy" className="text-brand-600 underline">Privacy Policy</a>{' '}
+          <Link href="/privacy" className="text-brand-600 underline">Privacy Policy</Link>{' '}
           and the Protection of Personal Information Act (POPIA).
         </label>
       </div>

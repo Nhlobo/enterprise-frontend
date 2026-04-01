@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SEO from '../components/SEO';
 import { useUserBehavior } from '../hooks/useUserBehavior';
 
@@ -88,7 +89,7 @@ export default function Privacy() {
           <h2>9. Cookies</h2>
           <p>
             We use cookies and similar technologies on our website. Please see our{' '}
-            <a href="/cookies" className="text-brand-600">Cookie Policy</a> for more information.
+            <Link href="/cookies" className="text-brand-600">Cookie Policy</Link> for more information.
           </p>
 
           <h2>10. Contact Us</h2>
